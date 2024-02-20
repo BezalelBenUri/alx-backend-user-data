@@ -3,8 +3,15 @@
 A simple Flask app with user authentication features.
 """
 
+from db import DB
+from user import User
 
+from auth import Auth
+
+from flask.helpers import make_response
 from flask import Flask, abort, jsonify, redirect, request
+
+AUTH = Auth()
 
 app = Flask(__name__)
 
