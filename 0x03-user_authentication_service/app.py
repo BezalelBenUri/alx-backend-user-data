@@ -25,7 +25,7 @@ def index() -> str:
     return jsonify({"message": "Bienvenue"})
 
 @app.route('/users', methods=['POST'])
-def register_user() -> str:
+def users() -> str:
     """POST /users
     Return:
         - JSON payload of the form containing various information.
