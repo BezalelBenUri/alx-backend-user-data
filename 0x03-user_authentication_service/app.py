@@ -23,7 +23,7 @@ def index() -> str:
         - JSON payload containing a welcome message.
     """
     return jsonify({"message": "Bienvenue"})
-i
+
 @app.route('/users', methods=['POST'])
 def register_user() -> str:
     """
